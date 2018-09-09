@@ -46,7 +46,7 @@ public class Cropping extends HttpServlet {
 
             //chamando a função procurar Imagem
             procurarImagem(diretorio);
-            
+
             request.setAttribute("msg", getMsg());
             RequestDispatcher dispatcher = request.getRequestDispatcher("desafio.jsp");
             dispatcher.forward(request, response);
@@ -107,6 +107,7 @@ public class Cropping extends HttpServlet {
 
                             File outputfile = new File("C:/temp/desafioSciCrop.jpg");
                             ImageIO.write(SubImgage, "jpg", outputfile);
+                            System.out.println("Image cropped successfully: " + outputfile.getPath());
 
                             setMsg("<script>alert('Imagem recortada com Sucesso!');</script>");
 
