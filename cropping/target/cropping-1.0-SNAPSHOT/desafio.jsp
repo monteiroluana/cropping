@@ -20,7 +20,7 @@
         <div style="height:70%; background-color: #FFCC00;">  
 
             <div style="height:60%; line-height: 400px;text-align: center; font-size: 40pt;">
-               Luana Monteiro Pereira
+               Exercício 'cropping'
             </div>
 
             <form class="md-form" action="Cropping" method="GET" >
